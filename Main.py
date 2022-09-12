@@ -4,8 +4,8 @@ def insertionSort(array) -> List[int]:
   for x in range(1,array.length-1):
     selection = x
     for y in range(x-1,-1,-1):
-      if (array[y] > array[x]):
-        array[y],array[x] = array[x],array[y]
+      if (array[y] > array[selection]):
+        array[y],array[selection] = array[selection],array[y]
         selection -=1
   return array
       
